@@ -47,5 +47,16 @@ console.log(ternary);
 
 /* Dom */
 
-var head2 = document.getElementById("head2");
-head2.innerHTML = "Hello People";
+/* getElementsByTagName , getElementByClassName */
+var head2 = document.getElementById("head2"); 
+head2.innerHTML = "Hello People"; /* innerText */
+
+/* QuerySelector */
+/* for class (".className"); id("#idName"); tag("tagname"); */
+var paragraph = document.querySelector("#Paragraph");
+paragraph.innerText = "Changed Paragraph";
+
+/* querySelectorAll */
+
+var query = document.querySelectorAll("p")[1];
+query.innerHTML = "Select all query";
