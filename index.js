@@ -43,3 +43,9 @@ else{
  */
 var ternary = students.name == "John Smith" ? "John Smith" : "Error!";
 console.log(ternary);
+
+
+/* Dom */
+
+var head2 = document.getElementById("head2");
+head2.innerHTML = "Hello People";
