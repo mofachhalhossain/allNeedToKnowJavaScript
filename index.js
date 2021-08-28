@@ -29,4 +29,17 @@ students.country = "United States";
 students.language = "[English, Spanish, Latin]";
 
 console.log(students);
-document.write("Language "+students.language);
+document.write(" "+students.language);
+
+
+/* ternery operator */
+
+/* if(students.name == "John Smith") {
+    console.log("John Smith");
+}
+else{
+    console.log("Error");
+}
+ */
+var ternary = students.name == "John Smith" ? "John Smith" : "Error!";
+console.log(ternary);
