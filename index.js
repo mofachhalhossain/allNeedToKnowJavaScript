@@ -60,3 +60,19 @@ paragraph.innerText = "Changed Paragraph";
 
 var query = document.querySelectorAll("p")[1];
 query.innerHTML = "Select all query";
+
+/* Button Onclick */
+
+function button(){
+    alert("Hello");
+}
+
+function button1(){
+    var veriable = document.querySelector("#p");
+    veriable.innerHTML = "Button Click Paragraph";
+}
+
+function imgButton(){
+    var imgSrc = document.querySelector("#imgSrc");
+    imgSrc.src = "img/Bird.jpg";
+}
