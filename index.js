@@ -76,3 +76,9 @@ function imgButton(){
     var imgSrc = document.querySelector("#imgSrc");
     imgSrc.src = "img/Bird.jpg";
 }
+
+/* hyperlink */
+
+var link = document.getElementsByTagName("a")[0];
+link.innerHTML = "https://getintopc.com"
+
