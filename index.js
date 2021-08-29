@@ -77,8 +77,26 @@ function imgButton(){
     imgSrc.src = "img/Bird.jpg";
 }
 
-/* hyperlink */
+/* hyperlink Dom */
 
 var link = document.getElementsByTagName("a")[0];
 link.innerHTML = "https://getintopc.com"
 
+
+/* Event Listener */
+
+document.querySelector("#eventListenerBtn").addEventListener("click", functionEventListener);
+
+function functionEventListener(){
+    alert("Event Listener");
+}
+
+var pEventListener = document.querySelector("#pEventListener");
+
+pEventListener.addEventListener("mouseover", function(){
+    pEventListener.classList.add("style");
+});
+
+pEventListener.addEventListener("mouseout", function(){
+    pEventListener.classList.remove("style");
+});
