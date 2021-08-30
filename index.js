@@ -123,6 +123,8 @@ document.querySelector("#inputButton").addEventListener("click", function(){
             throw "Lower Input";
         }else if(text>10){
             throw "Greater Input";
+        }else{
+            throw "Invalid Input"
         }
     }catch(err){
         alert(err);
