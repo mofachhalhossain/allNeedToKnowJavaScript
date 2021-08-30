@@ -128,3 +128,18 @@ document.querySelector("#inputButton").addEventListener("click", function(){
         alert(err);
     }
 })
+
+/* for vs for each */
+
+var arr = [20, 30, 40, 50];
+
+/* for(var i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+} */
+
+arr.forEach(function(x){
+console.log(x);
+var sqr = Math.pow(x, 2);
+console.log(sqr);
+})
+
