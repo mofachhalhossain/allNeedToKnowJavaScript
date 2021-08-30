@@ -103,11 +103,28 @@ pEventListener.addEventListener("mouseout", function(){
 
 
 /* Handeling Error */
-
-try{
+/* try catch finally */
+/* try{
     alert("Hello People!");
     alert(x);
     alert("Welcome to Js World!");
 }catch(error){
     console.log(error.message);
-}
+} */
+
+/* throw exception */
+
+document.querySelector("#inputButton").addEventListener("click", function(){
+    var text = document.querySelector("#textInput").value;
+    console.log(text);
+
+    try{
+        if(text<0){
+            throw "Lower Input";
+        }else if(text>10){
+            throw "Greater Input";
+        }
+    }catch(err){
+        alert(err);
+    }
+})
