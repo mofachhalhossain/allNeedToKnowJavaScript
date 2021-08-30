@@ -157,3 +157,17 @@ var filter = number.filter(function(x){
     return x>20;
 })
 console.log(filter);
+
+
+/* function vs arrowFunction */
+
+/* function add(a, b){
+    return a+b;
+}
+console.log(add(4,4)); */
+
+const add =(x,y) => {
+    return x+y;
+}
+
+console.log(add(5,5));
