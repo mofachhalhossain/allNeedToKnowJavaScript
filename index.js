@@ -171,3 +171,37 @@ const add =(x,y) => {
 }
 
 console.log(add(5,5));
+
+
+var students = [
+    {
+        id: "101",
+        name: "John",
+        gpa: "3.2"
+    },
+    {
+        id: "102",
+        name: "Mary",
+        gpa: "3.9"
+    },
+    {
+        id: "103",
+        name: "Joe",
+        gpa: "2.3"
+    }
+];
+
+function studentsName1(){
+    return students.filter(function(x){
+        return x.gpa > 3.0;
+    }).map(function(name){
+        return name.name;
+    });
+}
+
+const studentName2=()=>{
+    return students.filter((x)=> x.gpa<3.0).map((y)=>y.name);
+}
+
+console.log(studentsName1());
+console.log(studentName2());
