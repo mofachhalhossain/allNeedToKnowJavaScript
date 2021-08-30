@@ -100,3 +100,14 @@ pEventListener.addEventListener("mouseover", function(){
 pEventListener.addEventListener("mouseout", function(){
     pEventListener.classList.remove("style");
 });
+
+
+/* Handeling Error */
+
+try{
+    alert("Hello People!");
+    alert(x);
+    alert("Welcome to Js World!");
+}catch(error){
+    console.log(error.message);
+}
