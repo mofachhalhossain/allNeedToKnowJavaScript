@@ -143,3 +143,17 @@ var sqr = Math.pow(x, 2);
 console.log(sqr);
 })
 
+
+/* map, filter function */
+
+var number = [10, 20, 30, 40];
+
+var squar = number.map(function(x){
+    return Math.pow(x, 2);
+})
+console.log(squar);
+
+var filter = number.filter(function(x){
+    return x>20;
+})
+console.log(filter);
